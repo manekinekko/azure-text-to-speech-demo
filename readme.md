@@ -14,6 +14,10 @@ Rename the `env.example` file to `.env` and fill in the required information. Us
 ```
 SPEECH_KEY=
 SPEECH_REGION=
+
+# Optional
+SPEECH_VOICE_NAME=
+SPEECH_LANGUAGE=
 ```
 
 #### Running the app
