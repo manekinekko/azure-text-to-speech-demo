@@ -5,8 +5,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SpeechConfig, AudioConfig, SpeechSynthesizer } from "microsoft-cognitiveservices-speech-sdk";
 
-const SPEECH_VOICE_NAME = "en-US-BrandonMultilingualNeural";
-const SPEECH_LANGUAGE = "en-US";
+const SPEECH_VOICE_NAME = process.env.SPEECH_VOICE_NAME ?? "en-US-BrandonMultilingualNeural";
+const SPEECH_LANGUAGE = process.env.SPEECH_LANGUAGE ?? "en-US";
 const __dirname = path.resolve();
 function ingestVideoScriptFiles() {
   const directoryPath = path.join(__dirname, 'data');
